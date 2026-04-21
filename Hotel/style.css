@@ -1,0 +1,457 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{
+    background: linear-gradient(to left,orange,blueviolet);
+}
+.container{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: inline-block;
+    margin: 20px;
+    font-size: 30px;
+    align-self: flex-start;
+}
+.navbar{
+    display: inline-block;
+    padding-top: 20px;
+}
+a{
+    display: inline;
+    padding: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: sandybrown;
+    cursor: pointer;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color:white;
+    margin-bottom: 5px;
+}
+.menu:hover{
+    cursor: pointer;
+}
+.menu{
+    display: none;
+}
+@media all and (max-width:548px){
+    div{
+        flex-direction: column;
+        text-align: center;
+    }
+    div menu{
+        display: block;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    ul{
+        text-align: center;
+        flex-direction: column;
+        padding: 0px;
+        display: none;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        flex-direction: column;
+        right: 20px;
+        top: 20px;
+    }
+    .showmenu{
+        display: block;
+    }
+    #done{
+        background-color: black;
+        color: white;
+        margin-left: 100px;
+    }
+}
+h1{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+}
+.grid-container{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.grid-item{ /* for items */
+    color: black;
+    background-color: white;
+    height: 150px;
+    width: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+}
+.grid-item:hover{
+    transform: scale(1.08);
+}
+#contact{
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 100%;
+    margin-top: 10px;
+}
+h2{
+    padding-top: 5px;
+}
+#contact div{
+    padding-top: 15px;
+}
+.mail{
+    display: inline-block;
+}
+.sy{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 8px;
+}
+.phone{
+    display: inline-block;
+    padding-left: 10px;
+}
+p{
+    padding-top: 2px;
+    font-size: 20px;
+}
+.idly img{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    height: 250px;
+    width: 145px;
+    border-radius: 10px;
+    text-align: center;
+}
+.dhosai img{
+    padding-top: 5px;
+    height: 150px;
+    width: 100px;
+    text-align: center;
+}
+.chikdosa img{
+    height: 150px;
+    width: 80px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.mutdosa img{
+    height: 150px;
+    width: 100px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.famdosa img{
+    height: 150px;
+    width: 100px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.mdosai img{
+    height: 80px;
+    width: 125px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.poori img{
+    height: 100px;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.chappathi img{
+    height: 100px;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.parotta img{
+    height: 100px;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.kparotta img{
+    height: 80px;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.crice img{
+    height: 80px;
+    width: 125px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.vrice img{
+    height: 150px;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.cbiriyani img{
+    height: 80px;
+    width: 125px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.mbiriyani img{
+    height: 80px;
+    width: 125px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.vbiriyani img{
+    height: 80px;
+    width: 125px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.fbiriyani img{
+    height: 80px;
+    width: 125px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.mandhi img{
+    height: 80px;
+    width: 125px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.vmeal img{
+    height: 75px;
+    width: 125px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.nmeal img{
+    height: 125px;
+    width: 125px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.thanthoori img{
+    height: 80px;
+    width: 125px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.c65 img{
+    height: 80px;
+    width: 145px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.ffry img{
+    height: 150px;
+    width: 145px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.mfry img{
+    height: 125px;
+    width: 125px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.grid-container button{
+   font-size: 20px;
+   border-radius: 1px;
+   border-style: solid;
+   border-color: black;
+   padding: 2px;
+   margin-bottom: 5px;
+   color: black;
+   background-color: white;
+}
+.grid-container button:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+}
+.doneorder{
+    background-color: black;
+    color: white;
+    margin-left: 45%;
+}
+#done h1{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#done:hover{
+    cursor: pointer;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left,orange,blueviolet);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  display: none;
+}
+.popup-overlay1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left,orange,blueviolet);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  display: none;
+}
+.popupbox{
+    position: fixed;
+    background-color: white;
+    color: black;
+    width: 550px;
+    z-index: 2;
+    display: none;
+    top: 50%;
+    left: 50%;
+    overflow-y: auto;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 600px) {
+    .popupbox {
+        width: 90%;
+    }
+}
+.total{
+    text-align: center;
+    margin-top: 15px;
+}
+.popupbox table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+.popupbox p{
+    text-align: center;
+}
+#billbody{
+    margin-top: 10px;
+}
+.pay{
+    background-color: lawngreen;
+    font-size: 20px;
+    margin: 5px;
+    margin-left: 20px;
+    padding:5px;
+    cursor: pointer;
+}
+.exit{
+    background-color: lawngreen;
+    font-size: 20px;
+    margin-left: 60%;
+    padding:5px;
+    cursor: pointer;
+}
+.popupbox1 img{
+    display: block;
+    margin: auto;
+}
+.popupbox1 h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: black;
+}
+.popupbox1 h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+.alert-overlay{
+    display: none;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+.alert-box{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 250px;
+}
